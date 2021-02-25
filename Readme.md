@@ -1,7 +1,7 @@
-This is frontend of UVISR scholarship project
+This is frontend of UViSR scholarship project
 
 ## Используемые технологии:
-никакие (пока)
+Никакие (пока)
 
-## инструкция по запуску:
+## Инструкция по запуску:
 На данном этапе необходимо использовать свое воображение
