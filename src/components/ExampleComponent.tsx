@@ -49,4 +49,4 @@ class ExampleComponent extends React.Component<ExampleComponentProps, ExampleCom
     }
 }
 
-export default ExampleComponent;
+export {};
