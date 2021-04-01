@@ -25,7 +25,7 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 
     componentDidMount() {
-        fetch('http://65ac626e08ac.ngrok.io/api/sport/global_event', {mode: 'cors'})
+        fetch('http://0be750be2a83.ngrok.io', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
@@ -51,7 +51,7 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
                     <h4>Sport Part</h4>
                     <ul>
                         {items.map(item =>(
-                            <li key = {item.id}> {item.name} | {item.level} | {item.degree} | {item.place} | {item.date}</li>
+                            <li key = {item.id}> {item.name} | {item.level} | {item.degree} | {item.place} | {item.date} |</li>
                         ))}
                     </ul>
                 </div>

@@ -1,7 +1,5 @@
-
-
 import React,{Component} from 'react'
-import '../../App.css'
+/*import '../../App.css'
 
 interface PostComponentProps {
 
@@ -61,4 +59,4 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 }
 
-export default SportConnectionComponent;
+export default SportConnectionComponent;*/
