@@ -11,13 +11,12 @@ interface PostComponentState {
     isLoaded: boolean
     items: {
         id: number,
-        fieldA: string,
-        fieldB: string,
-        another: string,
+        field1: string,
+        field2: string,
     }[]
 }
 
-class SportConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
+class EduConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
     constructor(props: PostComponentProps) {
         super(props);
         this.state = {
@@ -27,13 +26,12 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 
     componentDidMount() {
-        fetch('http://1365a251a33b.ngrok.io/api/educ_part/example', {mode: 'cors'})
+        fetch('https://1365a251a33b.ngrok.io/api/educ_part/example', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
                         items: data,
                         isLoaded: true
-
                     })
                 })
             })
@@ -41,24 +39,23 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 
     render() {
-
         var {isLoaded, items} = this.state;
 
-        !isLoaded ? (
-            return <div>Loading..........</div>
-    )
-            return (
+        return (
+            !isLoaded ? (
+                <div>re..dd........</div>
+            ) : (
                 <div className="container">
-                    <h4>Culture Part</h4>
+                    <h4>Edu! Part</h4>
                     <ul >
                         {items.map(item =>(
-                            <li key = {item.id}> {item.fieldA} | {item.fieldB} | {item.another}</li>
+                            <li key = {item.id}> {item.field1} | {item.field2} | {item.id}</li>
                         ))}
                     </ul>
                 </div>
-            );
-        }
+            )
+    )
     }
 }
 
-export default SportConnectionComponent;
+export default EduConnectionComponent;

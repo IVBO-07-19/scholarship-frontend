@@ -6,6 +6,7 @@ import PostComponent from './components/PostComponent';
 import RegularButton from './components/UI/RegularButton';
 import SportConnectionComponent from './components/ConnectionComponents/SportConnectionComponent';
 import CultureConnectionComponent from './components/ConnectionComponents/CultureConnectionComponent';
+import EduConnectionComponent from './components/ConnectionComponents/EduConnectionComponent';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <SportConnectionComponent />
         <CultureConnectionComponent />
+        <EduConnectionComponent />
         
         <a
           className="App-link"
