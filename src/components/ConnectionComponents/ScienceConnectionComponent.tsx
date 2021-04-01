@@ -9,9 +9,8 @@ interface PostComponentState {
     isLoaded: boolean
     items: {
         id: number,
-        fieldA: string,
-        fieldB: string,
-        another: string,
+        status: string,
+        place: number,
     }[]
 }
 
@@ -25,7 +24,7 @@ class ScienceConnectionComponent extends React.Component<PostComponentProps, Pos
     }
 
     componentDidMount() {
-        fetch('https://culturalpart.herokuapp.com/items/', {mode: 'cors'})
+        fetch('https://ea18da147d49.ngrok.io/api/science/myproject/', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
@@ -42,21 +41,20 @@ class ScienceConnectionComponent extends React.Component<PostComponentProps, Pos
 
         var {isLoaded, items} = this.state;
 
-        if(!isLoaded){
-            return <div>Loading..........</div>
-        }
-        else{
-            return (
+        return (
+            !isLoaded ? (
+                <div>Loading...</div>
+            ) : (
                 <div className="container">
-                    <h4>Culture Part</h4>
+                    <h4>Science Part</h4>
                     <ul >
                         {items.map(item =>(
-                            <li key = {item.id}> {item.fieldA} | {item.fieldB} | {item.another}</li>
+                            <li key = {item.id}> {item.status} | {item.place}</li>
                         ))}
                     </ul>
                 </div>
-            );
-        }
+            )
+        )
     }
 }
 
