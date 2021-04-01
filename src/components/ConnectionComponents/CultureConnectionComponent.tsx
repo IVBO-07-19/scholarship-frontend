@@ -15,7 +15,7 @@ interface PostComponentState {
         }[]
 }
 
-class SportConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
+class CultureConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
     constructor(props: PostComponentProps) {
         super(props);
         this.state = {
@@ -60,4 +60,4 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 }
 
-export default SportConnectionComponent;
+export default CultureConnectionComponent;
