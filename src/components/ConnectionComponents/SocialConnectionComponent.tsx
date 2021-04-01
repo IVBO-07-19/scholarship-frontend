@@ -8,14 +8,19 @@ interface PostComponentState {
     isLoaded: boolean
     items: {
         id: number,
-        name: string,
-        level: string,
-        degree: string,
-        place: number,
-        date: string}[]
+        scores: number,
+        report: {
+            id: number,
+            title: string,
+            media_title: string,
+            edition_level_choicer: string,
+            co_author_quantity: number,
+            date: string
+        }
+    }[]
 }
 
-class SportConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
+class SocialConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
     constructor(props: PostComponentProps) {
         super(props);
         this.state = {
@@ -25,7 +30,7 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 
     componentDidMount() {
-        fetch('http://65ac626e08ac.ngrok.io/api/sport/global_event', {mode: 'cors'})
+        fetch('http://98736d595fce.ngrok.io/api/social/article/list/', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
@@ -42,22 +47,30 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
 
         var {isLoaded, items} = this.state;
 
-        if(!isLoaded){
-            return <div>Loading..........</div>
-        }
-        else{
-            return (
+        return (
+            !isLoaded ? (
+                <div>Loading...</div>
+            ) : (
                 <div className="container">
                     <h4>Social Part</h4>
                     <ul>
                         {items.map(item =>(
-                            <li key = {item.id}> {item.name} | {item.level} | {item.degree} | {item.place} | {item.date}</li>
+                            <li key = {item.id}> 
+                            {item.scores} | report: [ <br/>
+                                {item.report.title} <br/>
+                                {item.report.media_title} <br/>
+                                {item.report.edition_level_choicer} <br/>
+                                {item.report.co_author_quantity} <br/>
+                                {item.report.date} <br/>
+                                ] 
+                             
+                            </li>
                         ))}
                     </ul>
                 </div>
-            );
-        }
+            )
+        )
     }
 }
 
-export default SportConnectionComponent;
+export default SocialConnectionComponent;

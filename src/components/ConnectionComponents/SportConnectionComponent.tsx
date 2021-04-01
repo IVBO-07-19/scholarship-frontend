@@ -25,7 +25,7 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
     }
 
     componentDidMount() {
-        fetch('http://65ac626e08ac.ngrok.io/api/sport/global_event', {mode: 'cors'})
+        fetch('http://0be750be2a83.ngrok.io/api/sport/global_event/', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
@@ -42,11 +42,10 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
 
         var {isLoaded, items} = this.state;
 
-        if(!isLoaded){
-            return <div>Loading..........</div>
-        }
-        else{
-            return (
+        return (
+            !isLoaded ? (
+                <div>Loading...</div>
+            ) : (
                 <div className="container">
                     <h4>Sport Part</h4>
                     <ul>
@@ -55,8 +54,8 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
                         ))}
                     </ul>
                 </div>
-            );
-        }
+            )
+        )
     }
 }
 

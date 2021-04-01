@@ -42,21 +42,20 @@ class SportConnectionComponent extends React.Component<PostComponentProps, PostC
 
         var {isLoaded, items} = this.state;
 
-        if(!isLoaded){
-            return <div>Loading..........</div>
-        }
-        else{
-            return (
+        return (
+            !isLoaded ? (
+                <div>Loading...</div>
+            ) : (
                 <div className="container">
                     <h4>Culture Part</h4>
                     <ul >
                         {items.map(item =>(
-                            <li key = {item.id}> {item.fieldA} | {item.fieldB} | {item.another}</li>
+                            <li key = {item.id}> {item.fieldA} | {item.fieldB}</li>
                         ))}
                     </ul>
                 </div>
-            );
-        }
+            )
+        )
     }
 }
 

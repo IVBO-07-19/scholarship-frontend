@@ -43,7 +43,7 @@ class EduConnectionComponent extends React.Component<PostComponentProps, PostCom
 
         return (
             !isLoaded ? (
-                <div>re..dd........</div>
+                <div>Loading...</div>
             ) : (
                 <div className="container">
                     <h4>Edu! Part</h4>
