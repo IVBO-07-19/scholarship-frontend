@@ -71,6 +71,10 @@
   color: #61dafb;
 }
 
+.col-text{
+  color: cyan;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -88,3 +92,5 @@
     transform: translateX(1000px) translate(10px, 0, 200px) rotateY(360deg);
   }
 }
+
+
