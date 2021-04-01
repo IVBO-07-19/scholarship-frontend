@@ -4,6 +4,7 @@ import './App.css';
 import CommentComponent from './components/CommentComponent';
 import PostComponent from './components/PostComponent';
 import RegularButton from './components/UI/RegularButton';
+import ConnectionComponent from './components/ConnectionComponent';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <PostComponent />
+        <ConnectionComponent />
         
         <a
           className="App-link"
@@ -20,7 +21,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          DONT Learn React
+          Learn React
         </a>
       </header>
     </div>
