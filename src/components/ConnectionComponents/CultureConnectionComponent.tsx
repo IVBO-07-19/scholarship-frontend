@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import '../../App.css'
 
 interface PostComponentProps {
 
@@ -8,14 +9,13 @@ interface PostComponentState {
     isLoaded: boolean
     items: {
         id: number,
-        name: string,
-        level: string,
-        degree: string,
-        place: number,
-        date: string}[]
+        fieldA: string,
+        fieldB: string,
+        another: string,
+        }[]
 }
 
-class ConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
+class SportConnectionComponent extends React.Component<PostComponentProps, PostComponentState>{
     constructor(props: PostComponentProps) {
         super(props);
         this.state = {
@@ -25,7 +25,7 @@ class ConnectionComponent extends React.Component<PostComponentProps, PostCompon
     }
 
     componentDidMount() {
-        fetch('https://desolate-tundra-66059.herokuapp.com/api/sport/example/', {mode: 'cors'})
+        fetch('https://culturalpart.herokuapp.com/items/', {mode: 'cors'})
             .then(r => {
                 r.json().then(data => {
                     this.setState({
@@ -48,10 +48,11 @@ class ConnectionComponent extends React.Component<PostComponentProps, PostCompon
         else{
             return (
                 <div className="container">
-                    <ul>
+                    <h4>Culture Part</h4>
+                    <ul >
                         {items.map(item =>(
-                            <li key = {item.id}> {item.name} | {item.level} | {item.degree} | {item.place} | {item.date}</li>
-                        ))};
+                            <li key = {item.id}> {item.fieldA} | {item.fieldB} | {item.another}</li>
+                        ))}
                     </ul>
                 </div>
             );
@@ -59,4 +60,4 @@ class ConnectionComponent extends React.Component<PostComponentProps, PostCompon
     }
 }
 
-export default ConnectionComponent;
+export default SportConnectionComponent;

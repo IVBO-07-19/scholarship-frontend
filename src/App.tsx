@@ -4,7 +4,8 @@ import './App.css';
 import CommentComponent from './components/CommentComponent';
 import PostComponent from './components/PostComponent';
 import RegularButton from './components/UI/RegularButton';
-import ConnectionComponent from './components/ConnectionComponent';
+import SportConnectionComponent from './components/ConnectionComponents/SportConnectionComponent';
+import CultureConnectionComponent from './components/ConnectionComponents/CultureConnectionComponent';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ConnectionComponent />
+        <SportConnectionComponent />
+        <CultureConnectionComponent />
         
         <a
           className="App-link"
