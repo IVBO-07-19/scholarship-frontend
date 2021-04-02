@@ -1,27 +1,23 @@
-import React from 'react';
-import logo from './uvisr.png';
-import './App.css';
-import CommentComponent from './components/CommentComponent';
-import PostComponent from './components/PostComponent';
-import RegularButton from './components/UI/RegularButton';
-import SportConnectionComponent from './components/ConnectionComponents/SportConnectionComponent';
-import CultureConnectionComponent from './components/ConnectionComponents/CultureConnectionComponent';
-import EduConnectionComponent from './components/ConnectionComponents/EduConnectionComponent';
-import ScienceConnectionComponent from './components/ConnectionComponents/ScienceConnectionComponent';
-import SocialConnectionComponent from './components/ConnectionComponents/SocialConnectionComponent';
+import logo from "./uvisr.png";
+
+import "./App.css";
+
+import SportConnection from "./components/connection/Sport";
+import CultConnection from "./components/connection/Culture";
+import EduConnection from "./components/connection/Education";
+import SciConnection from "./components/connection/Science";
+import SocConnection from "./components/connection/Social";
 
 function App() {
-
-  const date = new Date();
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <SportConnectionComponent />
-        <CultureConnectionComponent />
-        <EduConnectionComponent />
-        <ScienceConnectionComponent />
-        <SocialConnectionComponent />
+        <SportConnection url="" />
+        <CultConnection url="" />
+        <EduConnection url="" />
+        <SciConnection url="" />
+        <SocConnection url="" />
         <a
           className="App-link"
           href="https://reactjs.org"
