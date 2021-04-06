@@ -1,33 +1,27 @@
-import logo from "./uvisr.png";
-
-import "./App.css";
-
-import SportConnection from "./components/connection/Sport";
-import CultConnection from "./components/connection/Culture";
-import EduConnection from "./components/connection/Education";
-import SciConnection from "./components/connection/Science";
-import SocConnection from "./components/connection/Social";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Information from './components/Information/Information';
+import Documents from './components/Documents/Documents';
+import Main from './components/Main/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <SportConnection url="" />
-        <CultConnection url="" />
-        <EduConnection url="" />
-        <SciConnection url="" />
-        <SocConnection url="" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          this code provided by 100kk/1nsec React developer B)
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header className="App-header">
+          <Header></Header>
+          <div>
+            <Route path='/Main' render={()=> <Main />} />
+            <Route path='/Information' render={()=> <Information />} />
+            <Route path='/Documents' render={()=> <Documents />} />
+          </div>      
+          
+        </header>
+      </div>
+    </BrowserRouter>
   );
 }
 

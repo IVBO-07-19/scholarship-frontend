@@ -1,11 +1,4 @@
-## This is frontend of UViSR scholarship project
-
-## Используемые технологии:
-React.js, Bootstrap(?), технология верстки HTML страниц
-
-## Инструкция по запуску:
-На данном этапе необходимо использовать свое воображение
-
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
