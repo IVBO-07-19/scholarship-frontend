@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './ApplicationForm.module.css';
 import TextField from '@material-ui/core/TextField';
+import CheckboxLabels from './Checkbox/Checkbox';
 
 interface TableComponentProps {
 }
@@ -95,7 +96,7 @@ class ApplicationForm extends React.Component<TableComponentProps, TableComponen
                     </div>
                 </div>
                 <div className={s.checkbox_activities}>
-
+                    <CheckboxLabels></CheckboxLabels>
                 </div>
                 
                 

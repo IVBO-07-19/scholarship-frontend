@@ -30,7 +30,9 @@ export default function ModuleButton() {
         fullWidth={true}
         maxWidth={'md'}
       >
-        <DialogTitle className={s.dialog_title} id="alert-dialog-title">Заявление претендента на получение повышенной государственной академической стипендии</DialogTitle>
+        <DialogTitle  id="alert-dialog-title">
+          <p className={s.dialog_title}>Заявление претендента на получение повышенной государственной академической стипендии</p>
+          </DialogTitle>
         <DialogContent className={s.dialog_content} >
           <DialogContentText  id="alert-dialog-description">
             <ApplicationForm></ApplicationForm>
