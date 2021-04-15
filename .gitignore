@@ -24,3 +24,4 @@ yarn-error.log*
 
 /.idea
 /.idea/workspace.xml
+/src/.env
