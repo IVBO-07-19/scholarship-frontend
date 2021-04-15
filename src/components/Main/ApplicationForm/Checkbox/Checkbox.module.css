@@ -1,0 +1,28 @@
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin-left: 16px;
+}
+
+.soglasie{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.checkbox_grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 7%;
+}
+
+.check_inline{
+    display: inline-flex;
+    padding-top: 10px;
+}

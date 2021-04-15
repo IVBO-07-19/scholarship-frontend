@@ -1,0 +1,41 @@
+p{
+    margin: 0;
+}
+
+span{
+    height: 44px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.headerbar{
+    background-color: #1D4CC5;
+    height: 44px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9.5fr 1px 20fr 1px 16fr 1px 54fr;
+}
+
+.nav1{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav2{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
