@@ -1,0 +1,113 @@
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.title_centr{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.input_fields{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.7fr 1.3fr 1fr 1fr 0.8fr 0.3fr;
+    grid-gap: 0.5%;
+    margin-bottom: 10px;
+}
+
+.input_fields_dis{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
+    grid-gap: 0.5%;
+    margin-bottom: 25px;
+}
+
+.input_field{
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.btn_add{
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.box2{
+    /* margin-top: 22px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.input_fields_dis2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 0.7fr 0.5fr 0.5fr 0.5fr 1fr;
+    grid-gap: 0.5%;
+    margin-bottom: 25px;
+}
+
+.input_fields2{
+    display: grid;
+    grid-template-columns: 1.8fr 1.6fr 1.3fr 1.2fr 0.9fr 0.4fr;
+    grid-gap: 0.5%;
+    margin-bottom: 7px;
+}
+
+.inline_field{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.title_inline{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    margin-right: 7px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp{
+    width: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+
+}
+
+.input_fields3{
+    display: grid;
+    grid-template-columns: 1.8fr 1.6fr 1.1fr 1.5fr 1.1fr 0.4fr;
+    grid-gap: 0.5%;
+    margin-bottom: 7px;
+}

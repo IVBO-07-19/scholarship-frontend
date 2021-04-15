@@ -1,0 +1,36 @@
+.dialog_content{
+    height: 100%;
+}
+
+.dialog_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonn{
+    width: 388px;
+    height: 88px;
+    background-color: #1D4CC5;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    z-index: 5;
+}
+span{
+    z-index: 0;
+}
