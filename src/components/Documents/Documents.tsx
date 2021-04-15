@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Documents.module.css';
+import mireafon from './mirea.jpg';
 
 
 interface TableComponentProps {
@@ -31,12 +32,13 @@ class Documents extends React.Component<TableComponentProps, TableComponentState
 
         return(
             <div>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
-                <p className={s.ppp}>Documents Documents Documents Documents Documents</p>
+                <div className={s.mirea_blok} style={{ backgroundImage:"url(" + mireafon + ")", backgroundSize: 'cover' }}>
+                    <div className={s.bg_blur}>
+                        <div className={s.text_block}>
+                            <p className={s.text}>На данный момент в этом разделе ничего нет</p>
+                        </div>
+                    </div>
+                </div>
             </div>
     )}
 }

@@ -1,0 +1,22 @@
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin-left: 16px;
+}
+
+.soglasie{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.check_inline{
+    display: inline-flex;
+    padding-top: 10px;
+}
