@@ -7,6 +7,7 @@ import EducationalModule from './EducationalModule/EducationalModule';
 import ScientificModule from './ScientificModule/ScientificModule';
 import CulturalModule from './CulturalModule/CulturalModule';
 import SportsModule from './SportsModule/SportsModule';
+
 import PublicModule from './PublicModule/PublicModule';
 
 
