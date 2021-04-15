@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Header.module.css'
 import { NavLink, BrowserRouter } from 'react-router-dom';
+import LogInBtn from "../LogButtons/LogInBtn";
 
 interface TableComponentProps {
 }
@@ -36,7 +37,8 @@ class Header extends React.Component<TableComponentProps, TableComponentState> {
                 <NavLink to="/Information" className={s.nav2}>Информация</NavLink>
                 <span></span> 
                 <NavLink to="/Documents" className={s.nav2}>Необходимые документы</NavLink>
-                <span></span> 
+                <span></span>
+                <LogInBtn></LogInBtn>
             </header>
     )}
 }
