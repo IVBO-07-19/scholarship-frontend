@@ -1,0 +1,26 @@
+.mirea_blok{
+    height: 1280px;
+    width: 100%;
+    
+}
+
+.bg_blur{
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.text_block{
+    padding-top: 30px;
+}
+
+.text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

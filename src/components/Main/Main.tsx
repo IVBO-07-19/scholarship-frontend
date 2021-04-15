@@ -3,6 +3,11 @@ import Footer from '../Footer/Footer';
 import s from './Main.module.css';
 import mireafon from './mirea.jpg';
 import ModuleButton from './ModuleButton/ModuleButton';
+import EducationalModule from './EducationalModule/EducationalModule';
+import ScientificModule from './ScientificModule/ScientificModule';
+import CulturalModule from './CulturalModule/CulturalModule';
+import SportsModule from './SportsModule/SportsModule';
+import PublicModule from './PublicModule/PublicModule';
 
 
 interface TableComponentProps {
@@ -53,7 +58,12 @@ class Main extends React.Component<TableComponentProps, TableComponentState> {
                             </div>
                         </div>
                         <div className={s.button_block}>
-                            <ModuleButton></ModuleButton>
+                            {/* <ModuleButton></ModuleButton> */}
+                            {/* <EducationalModule></EducationalModule> */}
+                            {/* <ScientificModule></ScientificModule> */}
+                            {/* <CulturalModule></CulturalModule> */}
+                            {/* <SportsModule></SportsModule> */}
+                            <PublicModule></PublicModule>
                         </div>
 
                     </div>
