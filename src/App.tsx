@@ -19,7 +19,7 @@ function App() {
         <header className="App-header">
           <Header />
           <div>
-            <Route path='/Main' render={()=> <Main />} />
+            <Route path='/scholarship-frontend' render={()=> <Main />} />
             <Route path='/Information' render={()=> <Information />} />
             <Route path='/Documents' render={()=> <Documents />} />
           </div>      
