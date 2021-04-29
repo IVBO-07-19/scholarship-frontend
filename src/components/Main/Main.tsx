@@ -59,12 +59,12 @@ class Main extends React.Component<TableComponentProps, TableComponentState> {
                             </div>
                         </div>
                         <div className={s.button_block}>
-                            {/* <ModuleButton></ModuleButton> */}
+                             <ModuleButton></ModuleButton>
                             {/* <EducationalModule></EducationalModule> */}
                             {/* <ScientificModule></ScientificModule> */}
                             {/* <CulturalModule></CulturalModule> */}
                             {/* <SportsModule></SportsModule> */}
-                            <PublicModule></PublicModule>
+                            {/*<PublicModule></PublicModule>*/}
                         </div>
 
                     </div>

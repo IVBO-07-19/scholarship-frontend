@@ -12,7 +12,7 @@ const Header = () => {
 
         return(
             <header className={s.headerbar}>
-                        <NavLink to="/" className={s.nav1}>УВиСР</NavLink>
+                        <NavLink to="/scholarship-frontend" className={s.nav1}>УВиСР</NavLink>
                         <span></span>
                         <NavLink to="/Information" className={s.nav2}>Информация</NavLink>
                         <span></span>

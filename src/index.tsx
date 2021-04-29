@@ -9,7 +9,7 @@ import { Auth0Provider } from '@auth0/auth0-react'
 // const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID ?? "";
 
 ReactDOM.render(
-  <Auth0Provider domain = "dev-pmfwjryi.eu.auth0.com" clientId = "VSSSQPMROlOksW0DoYFN7NjoIwy0HxGi"  redirectUri={window.location.origin}>
+  <Auth0Provider domain = "dev-pmfwjryi.eu.auth0.com" clientId = "VSSSQPMROlOksW0DoYFN7NjoIwy0HxGi"  redirectUri={window.location.origin + "/scholarship-frontend"}>
 
     <App />
   </Auth0Provider>,
