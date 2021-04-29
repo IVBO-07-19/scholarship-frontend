@@ -1,5 +1,6 @@
 ## This is frontend of UViSR scholarship project
 *Мы близки к финалу*
+[Сайт поднят тут](https://ivbo-07-19.github.io/scholarship-frontend/)
 ## Используемые технологии:
 ### Dependencies
 * node 12.20.7
