@@ -12,7 +12,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="dev-pmfwjryi.eu.auth0.com"
     clientId="VSSSQPMROlOksW0DoYFN7NjoIwy0HxGi"
-    redirectUri={window.location.origin}
+    redirectUri={window.location.origin + '/scholarship-frontend'}
   >
     <App />
   </Auth0Provider>,

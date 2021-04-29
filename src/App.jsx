@@ -21,7 +21,7 @@ function App() {
           <Header />
           <div>
             <Switch>
-              <Route exact path='/' render={()=> <Main />} />
+              <Route exact path='/scholarship-frontend' render={()=> <Main />} />
               <Route exact path='/Information' render={()=> <Information />} />
               <Route exact path='/Documents' render={()=> <Documents />} />
             </Switch>
