@@ -12,6 +12,7 @@ import Header from './components/Header/Header.js';
 import Information from './components/Information/Information';
 import Documents from './components/Documents/Documents';
 import Main from './components/Main/Main';
+import Requests from './components/Requests/Requests'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route exact path='/scholarship-frontend' render={()=> <Main />} />
               <Route exact path='/Information' render={()=> <Information />} />
               <Route exact path='/Documents' render={()=> <Documents />} />
+              <Route exact path='/Requests' render={()=> <Requests />} />
             </Switch>
           </div>      
           

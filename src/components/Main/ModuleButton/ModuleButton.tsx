@@ -9,6 +9,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import ApplicationForm from '../ApplicationForm/ApplicationForm';
 
 export default function ModuleButton() {
+
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -16,6 +17,7 @@ export default function ModuleButton() {
   };
 
   const handleClose = () => {
+    console.log("closed")
     setOpen(false);
   };
 

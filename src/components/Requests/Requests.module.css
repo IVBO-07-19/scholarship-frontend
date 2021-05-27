@@ -1,0 +1,46 @@
+.mirea_blok{
+    height: 1280px;
+    width: 100%;
+
+}
+
+.bg_blur{
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.text_block{
+    padding-top: 30px;
+}
+
+.text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.root{
+    min-width: 275px;
+}
+
+.bullet{
+    display: inline-block;
+    margin: 0 2px;
+    transform: scale(0.8);
+}
+.title{
+    font-size: 14px;
+}
+.date{
+    font-size: 14px;
+    margin-left: 12px ;
+    text-align: left;
+}
+.pos{
+    margin-bottom: 12px;
+}

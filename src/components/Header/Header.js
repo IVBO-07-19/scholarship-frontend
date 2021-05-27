@@ -21,6 +21,10 @@ const Header = () => {
         Необходимые документы
       </NavLink>
       <span></span>
+        <NavLink to="/Requests" className={s.nav2}>
+            Заявки
+        </NavLink>
+        <span></span>
       <div></div>
       <div className={s.btns}>
         {!isAuthenticated ? <LogInBtn></LogInBtn> : <LogOutBtn></LogOutBtn>}
