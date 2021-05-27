@@ -26,6 +26,8 @@
 }
 .root{
     min-width: 275px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .bullet{
@@ -35,6 +37,7 @@
 }
 .title{
     font-size: 14px;
+    display: inline-block;
 }
 .date{
     font-size: 14px;
