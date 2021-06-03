@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/scholarship-frontend/static/css/main.eaa391bb.chunk.css",
-    "main.js": "/scholarship-frontend/static/js/main.bb9b7fde.chunk.js",
-    "main.js.map": "/scholarship-frontend/static/js/main.bb9b7fde.chunk.js.map",
+    "main.css": "/scholarship-frontend/static/css/main.7accdc2c.chunk.css",
+    "main.js": "/scholarship-frontend/static/js/main.9cd382eb.chunk.js",
+    "main.js.map": "/scholarship-frontend/static/js/main.9cd382eb.chunk.js.map",
     "runtime-main.js": "/scholarship-frontend/static/js/runtime-main.cc16e47b.js",
     "runtime-main.js.map": "/scholarship-frontend/static/js/runtime-main.cc16e47b.js.map",
-    "static/js/2.652cca50.chunk.js": "/scholarship-frontend/static/js/2.652cca50.chunk.js",
-    "static/js/2.652cca50.chunk.js.map": "/scholarship-frontend/static/js/2.652cca50.chunk.js.map",
+    "static/js/2.12a27028.chunk.js": "/scholarship-frontend/static/js/2.12a27028.chunk.js",
+    "static/js/2.12a27028.chunk.js.map": "/scholarship-frontend/static/js/2.12a27028.chunk.js.map",
     "index.html": "/scholarship-frontend/index.html",
-    "static/css/main.eaa391bb.chunk.css.map": "/scholarship-frontend/static/css/main.eaa391bb.chunk.css.map",
-    "static/js/2.652cca50.chunk.js.LICENSE.txt": "/scholarship-frontend/static/js/2.652cca50.chunk.js.LICENSE.txt",
+    "static/css/main.7accdc2c.chunk.css.map": "/scholarship-frontend/static/css/main.7accdc2c.chunk.css.map",
+    "static/js/2.12a27028.chunk.js.LICENSE.txt": "/scholarship-frontend/static/js/2.12a27028.chunk.js.LICENSE.txt",
     "static/media/mirea.a38b54d2.jpg": "/scholarship-frontend/static/media/mirea.a38b54d2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc16e47b.js",
-    "static/js/2.652cca50.chunk.js",
-    "static/css/main.eaa391bb.chunk.css",
-    "static/js/main.bb9b7fde.chunk.js"
+    "static/js/2.12a27028.chunk.js",
+    "static/css/main.7accdc2c.chunk.css",
+    "static/js/main.9cd382eb.chunk.js"
   ]
 }
